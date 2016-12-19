@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Motivation</string>
+    <string name="placeholder_quote">Honesty is a very expensive gift. Don\'t expect it from cheap people \n- Warren Buffet</string>
+    <string name="title_activity_tasks">TasksActivity</string>
+</resources>

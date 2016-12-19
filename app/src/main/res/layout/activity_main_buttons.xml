@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_buttons"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.yifan.motivation.Activities.MainButtonsActivity">
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:id="@+id/buttons_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                >
+
+                <Button
+                    android:layout_width="@dimen/circle_button_diameter"
+                    android:layout_height="@dimen/circle_button_diameter"
+                    android:background="@drawable/round_button"
+                    android:textColor="@color/white"
+                    android:text="Tasks"
+                    android:textSize="@dimen/circle_button_text_size"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="onTaskButtonPressed"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:layout_width="@dimen/circle_button_diameter"
+                    android:layout_height="@dimen/circle_button_diameter"
+                    android:background="@drawable/round_button"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/circle_button_text_size"
+                    android:text="Calendar"
+                    android:onClick="onCalendarButtonPressed"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="75dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                >
+
+                <Button
+                    android:layout_width="@dimen/circle_button_diameter"
+                    android:layout_height="@dimen/circle_button_diameter"
+                    android:background="@drawable/round_button"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/circle_button_text_size"
+                    android:text="Testimonials"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="onTestimonialsButtonPressed"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:layout_width="@dimen/circle_button_diameter"
+                    android:layout_height="@dimen/circle_button_diameter"
+                    android:background="@drawable/round_button"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/circle_button_text_size"
+                    android:text="Networks"
+                    android:onClick="onNetworkButtonPressed"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/quote"
+            android:textSize="25sp"
+            android:background="@color/opaque"
+            android:textColor="@color/white"
+            android:text="@string/placeholder_quote"/>
+
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>
